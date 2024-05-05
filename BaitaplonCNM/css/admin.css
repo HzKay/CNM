@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content
+{
+    background-color: #5557d7;
+    color: white;
+    font-weight:bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(244, 240, 240);
+    
+}
+.logo
+{
+    height: 50px;
+}
+.user
+{
+    font-size: 38px;
+    margin-right: 10px;
+}
+.title
+{
+    font-size: 38px;
+}
+.aside
+{
+    background-color: white;
+    border-bottom: 1px solid rgb(193, 193, 193);
+    line-height: 50px;
+
+}
+.icon-bar
+{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+.search-box {
+	margin: auto;
+	right: 0px;
+	margin-top: 14px;
+	background: #fafafa;
+	border-bottom: 1px solid #e7e7e7;
+}
+#search {
+	margin: 0;
+	width: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 30px;
+	color: #999;
+	padding: 0 10px;
+	background: #fafafa;
+	outline: none;
+	border: none;
+}
+.search-btn-bg {
+	cursor: pointer;
+	display: inline-block;
+	background-image: none;
+	position: relative;
+	background: #fafafa;
+	outline: none;
+	box-shadow: none;
+	margin-left: -4px;
+	border: none;
+	height: 30px;
+
+}
+.search-btn-bg:hover {
+	color: #2ecc71;
+}
+.glyphicon-search:before {
+	font-size: 12px;
+}
+.welcome-msg {
+	text-align: left;
+	display: inline-block;
+	padding: 0px;
+	margin: 4px 5px;
+	font-size: 13px;
+	color: #999;
+}
+.thongbao
+{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 18px;
+    float: right; 
+}
+.comment
+{
+	
+	font-size: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 18px;
+	float: right;
+}
+.menu
+{
+	margin: auto;
+	background-color:white;
+    color: white;
+    font-weight:bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    height: 625px;
+}
+#nav > li > a
+{
+	color: black;
+	height: 50px;
+	line-height:2em;
+}
+#nav > li > a:hover
+{
+	background-color:#ddddec;
+	color: black;
+	border-radius: 0px 0px;
+}
+#nav > li > a.active:nth-child(1) 
+{
+	background-color:#5557d7;
+	color: rgb(247, 243, 243);
+	border-radius: 0px 0px;
+}
+.home
+{
+	margin: auto;
+	background-color: white;
+    color: black;
+    font-weight:bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    height: 625px;
+}
+#dashboard
+{
+	height: 150px;
+	width: 255px;
+	float: left;
+	margin-left: 10px;
+	box-shadow: 6px 4px 20px #e0dfdf;
+	color: white;
+}
+.color1
+{
+  background-color: #dfc153;
+}
+.color2
+{
+	background-color: #12af53;
+}
+.color3
+{
+	background-color: #c2281a;
+}
+.icon-user
+{
+	font-size: 40px;
+	color: #f4eed9;
+}
+.btn-load
+{
+	width: 255px;
+	background-color:#f4eed9 ;
+	height: 52px;
+	border-radius: 0px 0px;
+}
+.btn-setup
+{
+	background-color: #614eed;
+	color: white;
+}
