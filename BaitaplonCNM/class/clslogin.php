@@ -117,27 +117,21 @@ class dangnhap
 				$dem=1;
 				while($row=mysqli_fetch_array($ketqua))
 				{
+					$id=$row['id'];
 					$tenfile=$row['tenfile'];
 					$loaifile=$row['loaifile'];
 					$uploadtime=$row['uploadtime'];
 					$ten=$row['ten'];
 					echo '<tr>
 					<td scope="row">'.$dem.'</td>
-					<td>'.$tenfile.'</td>
+					<td align="left">'.$tenfile.'</td>
 					<td>'.$loaifile.'</td>
 					<td>'.$uploadtime.'</td>
 					<td>'.$ten.'</td>
 					<td>
-					<div class="dropdown dropleft">
-						<button type="button" class="btn" data-toggle="dropdown">
-						 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-						</button>
-						<div class="dropdown-menu modal-menu">
-						  <a class="dropdown-item" href="#"><i class="fa fa-eye action" aria-hidden="true"></i>Xem</a>
-						  <a class="dropdown-item" href="#"><i class="fa fa-download action" aria-hidden="true"></i>Tải xuống</a>
-						  <a class="dropdown-item" href="#"><i class="fa fa-trash action" aria-hidden="true"></i>Xóa</a>
-						</div>
-					</div>
+						  <a href="?id='.$id.'"><i class="fa fa-eye action" aria-hidden="true"></i></a>
+						  <a href="?id='.$id.'"><i class="fa fa-download action" aria-hidden="true"></i></a>
+						  <a href="delete_file.php?id='.$id.'"><i class="fa fa-trash action" aria-hidden="true"></i></a>
 					</td>
 				  </tr>';
 
@@ -153,6 +147,23 @@ class dangnhap
 			echo ' Không có dữ liệu';
 		}
 		mysqli_close($link);
+	}
+	public function laycot($sql)
+	{
+		$link=$this->connectDB();
+		$ketqua=mysqli_query($link,$sql);
+		$i=mysqli_num_rows($ketqua);
+		$giatri="";
+		if($i>0)
+		{
+			 
+			while($row=mysqli_fetch_array($ketqua))
+			{
+				
+				$giatri=$row[0];
+			}
+			return $giatri;
+		}
 	}
 		
  }

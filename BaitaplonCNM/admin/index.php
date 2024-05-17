@@ -110,7 +110,7 @@ else
 				<h4>Trang chủ</h4>
 				<div id="dashboard" class="color1">
 					<div class="float-left">
-						<h2 class="pl-3 pt-2">56</h2>
+						<h2 class="pl-3 pt-2"><?php echo $p->laycot("select count(id) from account where phanquyen=1"); ?></h2>
 						<h5 class="pl-3 pt-1">NGƯỜI DÙNG</h5>
 					</div>
 					<div class="float-left pl-5 pt-3">
@@ -120,7 +120,7 @@ else
 				</div>
 				<div id="dashboard" class="color2">
 					<div class="float-left">
-						<h2 class="pl-3 pt-2">56</h2>
+						<h2 class="pl-3 pt-2"><?php echo $p->laycot("select count(id) from uploadfile"); ?></h2>
 						<h5 class="pl-3 pt-1">FILE UPLOAD</h5>
 					</div>
 					<div class="float-left pl-5 pt-3">

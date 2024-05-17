@@ -121,7 +121,7 @@ else
                       <div class="table-file">
                         <form name="form1" method="post" action="" >
                         <?php
-                          $p->load_ds_file("select * from account a join uploadfile u on a.id=u.id_account");
+                          $p->load_ds_file("select u.id,a.ten,tenfile,loaifile,uploadtime from account a join uploadfile u on a.id=u.id_account");
                         ?>
                         </form>
                       </div>
@@ -162,7 +162,7 @@ switch(isset($_REQUEST['submitBtn']))
           $name=time()."_".$name;
           if($p->upload_file($tmp_name,'upload',$name)==1)
           {
-            $sql="insert into uploadfile(id_account,tenfile,loaifile,uploadtime) values ('$idaccount','$filename_without_extension','$extension','$uploadTime')";
+            $sql="insert into uploadfile(id_account,tenfile,loaifile,uploadtime,path) values ('$idaccount','$filename_without_extension','$extension','$uploadTime','$tmp_name')";
             if($p->themxoasua($sql)==1)
             {
               echo '<script language="javascript">
