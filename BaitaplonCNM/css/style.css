@@ -154,17 +154,25 @@ nav
 {
 	margin-top: 20px;
 }
-.btn-upload
+.btn-upload, .btn-accept, .btn-submit
 {
 	background-color: #614eed;
 	color: white;
 }
-.btn-submit
-{
-	background-color: #119749;
+
+.btn-submit:hover, .btn-upload:hover, .btn-accept:hover{
+	background-color: #8274f2;
 	color: white;
-	border-radius: 0px 0px;
 }
+
+.icon-status {
+	text-align: center;
+}
+
+.icon-status i {
+	font-size: 6rem;
+}
+
 .ds-file
 {
 	text-align: center;
